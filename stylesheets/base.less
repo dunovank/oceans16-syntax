@@ -64,7 +64,10 @@
 .comment {
         color: @light-gray;
 }
-
+.bracket-matcher {
+        background-color: @bright-blue;
+        opacity: 0.5;
+}
 .entity {
         &.name.type {
                 color: @light-orange;
@@ -295,11 +298,6 @@
         &.raw.inline {
                 color: @green;
         }
-}
-
-.bracket-matcher {
-        background-color: fade(@bright-blue, 50%);
-        opacity: 0.9;
 }
 
 .cursor {
