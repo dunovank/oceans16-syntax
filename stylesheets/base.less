@@ -36,10 +36,7 @@
                         }
                 }
         }
-        .bracket-matcher {
-                background-color: fade(@bright-blue, 50%);
-                opacity: 0.9;
-        }
+
         .gutter .line-number.folded,
         .gutter .line-number:after,
         .fold-marker:after {
@@ -50,10 +47,15 @@
                 color: @syntax-text-color;
         }
 
+        .bracket-matcher {
+                background-color: fade(@bright-blue, 50%);
+                opacity: 0.9;
+        }
         .cursor {
                 color: @syntax-cursor-color;
                 border-left-width: 2px;
         }
+
 
         .selection .region {
                 background-color: @syntax-selection-color;
@@ -76,7 +78,7 @@
 .entity {
         &.name.type {
                 color: @light-orange;
-                text-decoration: underline;
+                // text-decoration: underline; -- there's no such thing in sublime
         }
 
         &.other.inherited-class {
@@ -85,10 +87,10 @@
 }
 
 .keyword {
-        color: @red;
+        color: @purple;
 
         &.control {
-                color: @red;
+                color: @purple;
         }
 
         &.operator {
