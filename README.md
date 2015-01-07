@@ -2,4 +2,4 @@
 
 Oceans16 Dark/Light Flavours for Atom
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+![oceans16-dark](https://github.com/dunovank/oceans16/raw/master/Screens/oceans16D_close-up.png)
