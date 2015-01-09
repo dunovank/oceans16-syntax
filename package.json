@@ -1,7 +1,7 @@
 {
   "name": "oceans16-syntax",
   "theme": "syntax",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "Oceans16 Dark/Light Flavours for Atom",
   "repository": "https://github.com/dunovank/oceans16-syntax",
   "license": "MIT",
