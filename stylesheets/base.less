@@ -65,8 +65,8 @@
         color: @light-gray;
 }
 .bracket-matcher {
-        background-color: @bright-blue;
-        opacity: 0.8;
+        background-color: @bright-green;
+        opacity: 0.45;
 }
 .entity {
         &.name.type {
@@ -87,9 +87,17 @@
         }
 
         &.operator {
-                color: @blue;
+                color: @red;
         }
 
+        &.operator.logical {
+                color: @orange;
+        }
+
+        &.operator.assignment {
+                color: @cyan;
+        }
+        
         &.other.special-method {
                 color: @red;
         }
@@ -167,7 +175,7 @@
                 &.variable,
                 &.parameters,
                 &.array {
-                        color: @syntax-text-color;
+                        color: @green;
                 }
 
                 &.heading,
@@ -198,7 +206,7 @@
         }
 
         &.function  {
-                color: @blue;
+                color: @red;
 
                 &.any-method {
                         color: @red;
@@ -208,7 +216,7 @@
 
 .entity {
         &.name.function {
-                color: @red;
+                color: @blue;
         }
 
         &.name.class, &.name.type.class {
