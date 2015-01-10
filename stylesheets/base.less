@@ -1,38 +1,36 @@
 @import "syntax-variables";
 
-.editor-colors {
-        background-color: @syntax-background-color;
-        color: @syntax-text-color;
-}
-
 .editor {
         background-color: @syntax-background-color;
         color: @syntax-text-color;
 
         .wrap-guide {
-                background-color: @syntax-wrap-guide-color;
+                background-color: rgba(255, 255, 255, 0.05);
         }
 
         .indent-guide {
-                color: @syntax-indent-guide-color;
+                //color: @syntax-indent-guide-color;
+                color: rgba(255, 255, 255, 0.09);
         }
-
+        
         .invisible-character {
-                color: @syntax-invisible-character-color;
+                color: #515a6f;//@syntax-invisible-character-color;
+                opacity:.4
         }
 
         .gutter {
                 background-color: @syntax-gutter-background-color;
-                color: @syntax-gutter-text-color;
+                opacity: .7;
+                color: @blue;
 
                 .line-number {
                         &.cursor-line {
                                 background-color: @syntax-gutter-background-color-selected;
-                                color: @syntax-gutter-text-color-selected;
+                                color: #6386af;
                         }
 
                         &.cursor-line-no-selection {
-                                color: @syntax-gutter-text-color-selected;
+                                color: @blue;
                         }
                 }
         }
@@ -40,21 +38,22 @@
         .gutter .line-number.folded,
         .gutter .line-number:after,
         .fold-marker:after {
-                color: @light-gray;
+                color:  #AB7967;
         }
-
+   
         .invisible {
                 color: @syntax-text-color;
         }
-
+    
         .selection .region {
-                background-color: @syntax-selection-color;
+                background-color: @syntax-gutter-background-color-selected;
+                opacity: .4;
         }
 }
 
 .editor .search-results .marker .region {
         background-color: transparent;
-        border: 1px solid @bright-green;
+        border: 1px solid @syntax-result-marker-color;
 }
 
 .editor .search-results .marker.current-result .region {
@@ -62,11 +61,11 @@
 }
 
 .comment {
-        color: @light-gray;
+        color: #515a6f;//#4F5B66;
 }
 .bracket-matcher {
-        background-color: @bright-green;
-        opacity: 0.45;
+        background-color:#356cb4;
+        opacity: .8;
 }
 .entity {
         &.name.type {
@@ -80,7 +79,7 @@
 }
 
 .keyword {
-        color: @red;
+        color: @purple;
 
         &.control {
                 color: @purple;
@@ -112,10 +111,10 @@
 }
 
 .constant {
-        color: @orange;
+        color: @red;
 
         &.character.escape {
-                color: @cyan;
+                color: @orange;
         }
 
         &.numeric {
@@ -127,7 +126,11 @@
         }
 
         &.other.symbol {
-                color: @green;
+                color: @orange;
+        }
+
+        &.boolean {
+                color: @red;
         }
 }
 
@@ -149,9 +152,9 @@
 }
 
 .string {
+
         color: @green;
-
-
+        
         &.regexp {
                 color: @cyan;
 
@@ -168,14 +171,17 @@
 .punctuation {
         &.definition {
                 &.comment {
-                        color: @light-gray;
+                        color: #515a6f;//#4F5B66;
                 }
 
-                &.string,
+                &.string {
+                        color: @green;
+                }
+                
                 &.variable,
                 &.parameters,
                 &.array {
-                        color: @green;
+                        color: @syntax-text-color;
                 }
 
                 &.heading,
@@ -216,7 +222,7 @@
 
 .entity {
         &.name.function {
-                color: @blue;
+                color:@blue;
         }
 
         &.name.class, &.name.type.class {
@@ -321,5 +327,7 @@
 }
 
 .editor.mini .scroll-view {
+        background-color: @syntax-background-color;//gray;
+        color: @light-blue;//@syntax-background-color;
         padding-left: 4px;
 }
