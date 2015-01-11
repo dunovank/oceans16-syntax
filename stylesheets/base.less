@@ -9,28 +9,27 @@
         }
 
         .indent-guide {
-                //color: @syntax-indent-guide-color;
-                color: rgba(255, 255, 255, 0.09);
+                color: rgba(255, 255, 255, 0.07);
         }
-        
+
         .invisible-character {
-                color: #515a6f;//@syntax-invisible-character-color;
+                color: #515a6f;
                 opacity:.4
         }
 
         .gutter {
                 background-color: @syntax-gutter-background-color;
-                opacity: .7;
-                color: @blue;
+                color: #626b83;
 
                 .line-number {
                         &.cursor-line {
-                                background-color: @syntax-gutter-background-color-selected;
-                                color: #6386af;
+                                background-color: fade(#515a6f, 60%);
+                                color: #626b83;
                         }
 
                         &.cursor-line-no-selection {
-                                color: @blue;
+                                background-color: fade(#515a6f, 60%);
+                                color: #626b83;
                         }
                 }
         }
@@ -38,16 +37,15 @@
         .gutter .line-number.folded,
         .gutter .line-number:after,
         .fold-marker:after {
-                color:  #AB7967;
+                color: @orange;
         }
-   
+
         .invisible {
                 color: @syntax-text-color;
         }
-    
+
         .selection .region {
-                background-color: @syntax-gutter-background-color-selected;
-                opacity: .4;
+                background-color: fade(#515a6f, 40%);
         }
 }
 
@@ -61,11 +59,11 @@
 }
 
 .comment {
-        color: #515a6f;//#4F5B66;
+        color: #626b83;
 }
 .bracket-matcher {
         background-color:#356cb4;
-        opacity: .8;
+        opacity: 1.0;
 }
 .entity {
         &.name.type {
@@ -96,7 +94,7 @@
         &.operator.assignment {
                 color: @cyan;
         }
-        
+
         &.other.special-method {
                 color: @red;
         }
@@ -154,7 +152,7 @@
 .string {
 
         color: @green;
-        
+
         &.regexp {
                 color: @cyan;
 
@@ -171,13 +169,13 @@
 .punctuation {
         &.definition {
                 &.comment {
-                        color: #515a6f;//#4F5B66;
+                        color: #515a6f;
                 }
 
                 &.string {
                         color: @green;
                 }
-                
+
                 &.variable,
                 &.parameters,
                 &.array {
@@ -329,5 +327,5 @@
 .editor.mini .scroll-view {
         background-color: @syntax-background-color;//gray;
         color: @light-blue;//@syntax-background-color;
-        padding-left: 4px;
+        padding-left: 2px;
 }
