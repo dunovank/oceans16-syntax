@@ -11,6 +11,10 @@
         .wrap-guide {
                 background-color: rgba(255, 255, 255, 0.05);
         }
+        //disable code folding icons
+        .icon-right {
+                width: 0 !important;
+        }
         
         .indent-guide {
                 color: rgba(255, 255, 255, 0.07);
@@ -22,19 +26,22 @@
         }
         
         .gutter {
-                width:50px;
+                //webkit-flex: 1;
                 background-color:#333946; //@syntax-gutter-background-color;
-                color: #515a6f;
-                
+                color: #626b83;
+                text-align:right;
+                width: 40px;
+                position:relative;
                 .line-number {
+                        //width:100%;
                         &.cursor-line {
                                 background-color: #4c5568; //fade(#515a6f, 90%);
-                                color: #7b849d;
+                                color: @blue;//#7b849d;
                         }
                         
                         &.cursor-line-no-selection {
                                 background-color: #4c5568; //fade(#515a6f, 90%);
-                                color: #626b83;
+                                color: @blue;
                         }
                 }
         }
