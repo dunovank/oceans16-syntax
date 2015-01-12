@@ -3,47 +3,52 @@
 .editor {
         background-color: @syntax-background-color;
         color: @syntax-text-color;
-
+        .scroll-view {
+                .lines {
+                        padding-left:5px;
+                }        
+        }
         .wrap-guide {
                 background-color: rgba(255, 255, 255, 0.05);
         }
-
+        
         .indent-guide {
                 color: rgba(255, 255, 255, 0.07);
         }
-
+        
         .invisible-character {
                 color: #515a6f;
                 opacity:.4
         }
-
+        
         .gutter {
-                background-color: @syntax-gutter-background-color;
-                color: #626b83;
-
+                width:50px;
+                background-color:#333946; //@syntax-gutter-background-color;
+                color: #515a6f;
+                
                 .line-number {
                         &.cursor-line {
-                                background-color: fade(#515a6f, 60%);
-                                color: #626b83;
+                                background-color: #4c5568; //fade(#515a6f, 90%);
+                                color: #7b849d;
                         }
-
+                        
                         &.cursor-line-no-selection {
-                                background-color: fade(#515a6f, 60%);
+                                background-color: #4c5568; //fade(#515a6f, 90%);
                                 color: #626b83;
                         }
                 }
         }
-
+        
         .gutter .line-number.folded,
         .gutter .line-number:after,
         .fold-marker:after {
                 color: @orange;
         }
-
+        
         .invisible {
                 color: @syntax-text-color;
         }
-
+        
         .selection .region {
                 background-color: fade(#515a6f, 40%);
         }
@@ -62,6 +67,7 @@
         color: #626b83;
 }
 .bracket-matcher {
+        margin-left:5px;
         background-color:#356cb4;
         opacity: 1.0;
 }
@@ -70,7 +76,7 @@
                 color: @light-orange;
                 text-decoration: underline;
         }
-
+        
         &.other.inherited-class {
                 color: @green;
         }
@@ -78,27 +84,27 @@
 
 .keyword {
         color: @purple;
-
+        
         &.control {
                 color: @purple;
         }
-
+        
         &.operator {
                 color: @red;
         }
-
+        
         &.operator.logical {
                 color: @orange;
         }
-
+        
         &.operator.assignment {
                 color: @cyan;
         }
-
+        
         &.other.special-method {
                 color: @red;
         }
-
+        
         &.other.unit {
                 color: @orange;
         }
@@ -110,23 +116,23 @@
 
 .constant {
         color: @red;
-
+        
         &.character.escape {
                 color: @orange;
         }
-
+        
         &.numeric {
                 color: @orange;
         }
-
+        
         &.other.color {
                 color: @orange;
         }
-
+        
         &.other.symbol {
                 color: @orange;
         }
-
+        
         &.boolean {
                 color: @red;
         }
@@ -134,11 +140,11 @@
 
 .variable {
         color: @red;
-
+        
         &.interpolation {
                 color: darken(@red, 10%);
         }
-
+        
         &.parameter.function {
                 color: @syntax-text-color;
         }
@@ -150,17 +156,17 @@
 }
 
 .string {
-
+        
         color: @green;
-
+        
         &.regexp {
                 color: @cyan;
-
+                
                 .source.ruby.embedded {
                         color: @orange;
                 }
         }
-
+        
         &.other.link {
                 color: @red;
         }
@@ -171,47 +177,47 @@
                 &.comment {
                         color: #515a6f;
                 }
-
+                
                 &.string {
                         color: @green;
                 }
-
+                
                 &.variable,
                 &.parameters,
                 &.array {
                         color: @syntax-text-color;
                 }
-
+                
                 &.heading,
                 &.identity {
                         color: @red;
                 }
-
+                
                 &.bold {
                         color: @light-orange;
                         font-style: bold;
                 }
-
+                
                 &.italic {
                         color: @purple;
                         font-style: italic;
                 }
         }
-
+        
         &.section.embedded {
                 color: darken(@red, 10%);
         }
-
+        
 }
 
 .support {
         &.class {
                 color: @light-orange;
         }
-
+        
         &.function  {
                 color: @red;
-
+                
                 &.any-method {
                         color: @red;
                 }
@@ -222,23 +228,23 @@
         &.name.function {
                 color:@blue;
         }
-
+        
         &.name.class, &.name.type.class {
                 color: @light-orange;
         }
-
+        
         &.name.section {
                 color: @red;
         }
-
+        
         &.name.tag {
                 color: @red;
                 text-decoration: underline;
         }
-
+        
         &.other.attribute-name {
                 color: @orange;
-
+                
                 &.id {
                         color: @red;
                 }
@@ -249,19 +255,19 @@
         &.class {
                 color: @light-orange;
         }
-
+        
         &.link {
                 color: @orange;
         }
-
+        
         &.require {
                 color: @red;
         }
-
+        
         &.selector {
                 color: @purple;
         }
-
+        
         &.separator {
                 background-color: @gray;
                 color: @syntax-text-color;
@@ -277,36 +283,36 @@
                 color: @orange;
                 font-style: bold;
         }
-
+        
         &.changed {
                 color: @purple;
         }
-
+        
         &.deleted {
                 color: @red;
         }
-
+        
         &.italic {
                 color: @purple;
                 font-style: italic;
         }
-
+        
         &.heading .punctuation.definition.heading {
                 color: @blue;
         }
-
+        
         &.inserted {
                 color: @green;
         }
-
+        
         &.list {
                 color: @red;
         }
-
+        
         &.quote {
                 color: @orange;
         }
-
+        
         &.raw.inline {
                 color: @green;
         }
