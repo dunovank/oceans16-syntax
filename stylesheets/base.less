@@ -28,17 +28,13 @@
         }
         
         .gutter {
-                
                 background-color:#333946;
                 color: #626b83;
                 text-align: right;
                 padding-right: 8px;
-                margin-right: right;
                 
                 .line-number {
-                        
-                        width:30px;
-                        
+                        width: 30px;
                         &.cursor-line {
                                 padding-right: 8px;
                                 background-color: #4c5568; //fade(#515a6f, 90%);
@@ -64,6 +60,7 @@
         }
         
         .selection .region {
+                margin-left:6px;
                 background-color: fade(#515a6f, 40%);
         }
 }
@@ -71,7 +68,7 @@
 .editor .search-results .marker .region {
         background-color: transparent;
         border: 1px solid @syntax-result-marker-color;
-}
+} 
 
 .editor .search-results .marker.current-result .region {
         border: 1px solid @syntax-result-marker-color-selected;
@@ -80,6 +77,7 @@
 .comment {
         color: #626b83;
 }
+
 .bracket-matcher {
         margin-left:6px;
         background-color:#356cb4;
