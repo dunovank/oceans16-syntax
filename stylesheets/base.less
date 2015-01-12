@@ -4,9 +4,7 @@
         background-color: @syntax-background-color;
         color: @syntax-text-color;
         .scroll-view {
-                .lines {
-                        margin-left: 6px;
-                }
+                padding-left:8px;
         }
         
         .wrap-guide {
@@ -19,32 +17,30 @@
         }
         
         .indent-guide {
-                color: rgba(255, 255, 255, 0.07);
+                color: fade(#515a6f, 40%);
         }
         
         .invisible-character {
-                color: #515a6f;
-                opacity:.4
+                color: #626b83;
         }
         
         .gutter {
-                background-color:#333946;
-                color: #626b83;
+                background-color: fade(#333946, 30%);// #333946;
+                color:#515a6f;//#626b83;//#515a6f;
+                border-right: 2px solid fade(#515a6f, 65%);
                 text-align: right;
-                padding-right: 6px;
-                
+                //padding: 0 0.25em 0 0.5em;
                 .line-number {
-                        width: 30px;
+                        padding-right: 3px;
+                        width: 48px;
                         &.cursor-line {
-                                //padding-right: 10px;
-                                //background-color: #4c5568; //fade(#515a6f, 90%);
-                                color: @blue;//@blue;//#7b849d;
+                                background-color: fade(#4c5568, 55%);
+                                color: fade(@blue, 75%);
                         }
                         
                         &.cursor-line-no-selection {
-                                //padding-right: 8px;
-                                //background-color: #4c5568; //fade(#515a6f, 90%);
-                                color: @blue;
+                                background-color: fade(#4c5568, 55%);
+                                color: fade(@blue, 75%);
                         }
                 }
         }
@@ -60,8 +56,7 @@
         }
         
         .selection .region {
-                //margin-left:4px;
-                background-color: fade(#515a6f, 40%);
+                background-color: fade(#4c5568, 55%);
         }
 }
 
@@ -79,7 +74,6 @@
 }
 
 .bracket-matcher {
-        //margin-left:6px;
         background-color:#356cb4;
         opacity: 1.0;
 }
