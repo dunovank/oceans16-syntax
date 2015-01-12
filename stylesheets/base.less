@@ -5,7 +5,7 @@
         color: @syntax-text-color;
         .scroll-view {
                 .lines {
-                        padding-left: 6px;
+                        margin-left: 6px;
                 }
         }
         
@@ -31,19 +31,19 @@
                 background-color:#333946;
                 color: #626b83;
                 text-align: right;
-                padding-right: 8px;
+                padding-right: 6px;
                 
                 .line-number {
                         width: 30px;
                         &.cursor-line {
-                                padding-right: 8px;
-                                background-color: #4c5568; //fade(#515a6f, 90%);
-                                color: @blue;//#7b849d;
+                                //padding-right: 10px;
+                                //background-color: #4c5568; //fade(#515a6f, 90%);
+                                color: @blue;//@blue;//#7b849d;
                         }
                         
                         &.cursor-line-no-selection {
-                                padding-right: 8px;
-                                background-color: #4c5568; //fade(#515a6f, 90%);
+                                //padding-right: 8px;
+                                //background-color: #4c5568; //fade(#515a6f, 90%);
                                 color: @blue;
                         }
                 }
@@ -60,7 +60,7 @@
         }
         
         .selection .region {
-                margin-left:6px;
+                //margin-left:4px;
                 background-color: fade(#515a6f, 40%);
         }
 }
@@ -79,7 +79,7 @@
 }
 
 .bracket-matcher {
-        margin-left:6px;
+        //margin-left:6px;
         background-color:#356cb4;
         opacity: 1.0;
 }
