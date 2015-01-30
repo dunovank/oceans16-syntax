@@ -4,7 +4,7 @@
         background-color: @syntax-background-color;
         color: @syntax-text-color;
         .scroll-view {
-                padding-left:8px;
+                padding-left:6px;
         }
         
         .wrap-guide {
@@ -25,11 +25,12 @@
         }
         
         .gutter {
-                background-color: fade(#333946, 30%);// #333946;
+                background-color: fade(#333946, 50%);// #333946;
+                //background-color: @syntax-background-color;
                 color:#515a6f;//#626b83;//#515a6f;
-                border-right: 2px solid fade(#515a6f, 65%);
+                border-right: 0px solid fade(#515a6f, 65%);
                 text-align: right;
-                //padding: 0 0.25em 0 0.5em;
+
                 .line-number {
                         padding-right: 3px;
                         width: 48px;
@@ -56,7 +57,7 @@
         }
         
         .selection .region {
-                background-color: fade(#4c5568, 55%);
+                background-color: fade(#4c5568, 65%);
         }
 }
 
@@ -75,7 +76,7 @@
 
 .bracket-matcher {
         background-color:#356cb4;
-        opacity: 1.0;
+        opacity: .8;
 }
 
 .editor .gutter .line-number .icon-right {
