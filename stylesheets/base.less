@@ -4,7 +4,7 @@
         background-color: @syntax-background-color;
         color: @syntax-text-color;
         .scroll-view {
-                padding-left:6px;
+                padding-left:5px;
         }
 
         .wrap-guide {
@@ -17,7 +17,7 @@
         }
 
         .indent-guide {
-                color: fade(#515a6f, 25%);
+                color: fade(@blue, 10%);
         }
 
         .invisible-character {
@@ -27,13 +27,12 @@
 
         .gutter {
                 background-color: fade(#333946, 50%);// #333946;
-                //background-color: @syntax-background-color;
                 color:#515a6f;//#626b83;//#515a6f;
                 text-align: right;
 
                 .line-number {
-                        padding-right: 2px;
-                        width: 23px;
+                        padding-right: 4px;
+                        width:29px;
                         &.cursor-line {
                                 background-color: fade(#4c5568, 55%);
                                 color: fade(@blue, 75%);
@@ -110,7 +109,7 @@
         }
 
         &.operator.assignment {
-                color: @cyan;
+                color: @syntax-text-color;
         }
 
         &.other.special-method {
