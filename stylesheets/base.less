@@ -6,56 +6,56 @@
         .scroll-view {
                 padding-left:6px;
         }
-        
+
         .wrap-guide {
                 background-color: rgba(255, 255, 255, 0.05);
         }
-        
+
         //disable code folding icons
         .icon-right {
                 width: 0 !important;
         }
-        
+
         .indent-guide {
-                color: fade(#515a6f, 40%);
+                color: fade(#515a6f, 25%);
         }
-        
+
         .invisible-character {
-                color: #626b83;
+                //color: #626b83;
+                color: fade(#515a6f, 25%);
         }
-        
+
         .gutter {
                 background-color: fade(#333946, 50%);// #333946;
                 //background-color: @syntax-background-color;
                 color:#515a6f;//#626b83;//#515a6f;
-                border-right: 0px solid fade(#515a6f, 65%);
                 text-align: right;
 
                 .line-number {
-                        padding-right: 3px;
-                        width: 48px;
+                        padding-right: 2px;
+                        width: 23px;
                         &.cursor-line {
                                 background-color: fade(#4c5568, 55%);
                                 color: fade(@blue, 75%);
                         }
-                        
+
                         &.cursor-line-no-selection {
                                 background-color: fade(#4c5568, 55%);
                                 color: fade(@blue, 75%);
                         }
                 }
         }
-        
+
         .gutter .line-number.folded,
         .gutter .line-number:after,
         .fold-marker:after {
                 color: @orange;
         }
-        
+
         .invisible {
-                color: @syntax-text-color;
+                color: fade(#4c5568, 65%);
         }
-        
+
         .selection .region {
                 background-color: fade(#4c5568, 65%);
         }
@@ -64,7 +64,7 @@
 .editor .search-results .marker .region {
         background-color: transparent;
         border: 1px solid @syntax-result-marker-color;
-} 
+}
 
 .editor .search-results .marker.current-result .region {
         border: 1px solid @syntax-result-marker-color-selected;
@@ -80,7 +80,7 @@
 }
 
 .editor .gutter .line-number .icon-right {
-        display: none;         
+        display: none;
 }
 
 .entity {
@@ -88,7 +88,7 @@
                 color: @light-orange;
                 text-decoration: underline;
         }
-        
+
         &.other.inherited-class {
                 color: @green;
         }
@@ -96,27 +96,27 @@
 
 .keyword {
         color: @purple;
-        
+
         &.control {
                 color: @purple;
         }
-        
+
         &.operator {
                 color: @red;
         }
-        
+
         &.operator.logical {
                 color: @orange;
         }
-        
+
         &.operator.assignment {
                 color: @cyan;
         }
-        
+
         &.other.special-method {
                 color: @red;
         }
-        
+
         &.other.unit {
                 color: @orange;
         }
@@ -128,23 +128,23 @@
 
 .constant {
         color: @red;
-        
+
         &.character.escape {
                 color: @orange;
         }
-        
+
         &.numeric {
                 color: @orange;
         }
-        
+
         &.other.color {
                 color: @orange;
         }
-        
+
         &.other.symbol {
                 color: @orange;
         }
-        
+
         &.boolean {
                 color: @red;
         }
@@ -152,11 +152,11 @@
 
 .variable {
         color: @red;
-        
+
         &.interpolation {
                 color: darken(@red, 10%);
         }
-        
+
         &.parameter.function {
                 color: @syntax-text-color;
         }
@@ -168,17 +168,17 @@
 }
 
 .string {
-        
+
         color: @green;
-        
+
         &.regexp {
                 color: @cyan;
-                
+
                 .source.ruby.embedded {
                         color: @orange;
                 }
         }
-        
+
         &.other.link {
                 color: @red;
         }
@@ -189,47 +189,47 @@
                 &.comment {
                         color: #515a6f;
                 }
-                
+
                 &.string {
                         color: @green;
                 }
-                
+
                 &.variable,
                 &.parameters,
                 &.array {
                         color: @syntax-text-color;
                 }
-                
+
                 &.heading,
                 &.identity {
                         color: @red;
                 }
-                
+
                 &.bold {
                         color: @light-orange;
                         font-style: bold;
                 }
-                
+
                 &.italic {
                         color: @purple;
                         font-style: italic;
                 }
         }
-        
+
         &.section.embedded {
                 color: darken(@red, 10%);
         }
-        
+
 }
 
 .support {
         &.class {
                 color: @light-orange;
         }
-        
+
         &.function  {
                 color: @red;
-                
+
                 &.any-method {
                         color: @red;
                 }
@@ -240,23 +240,23 @@
         &.name.function {
                 color:@blue;
         }
-        
+
         &.name.class, &.name.type.class {
                 color: @light-orange;
         }
-        
+
         &.name.section {
                 color: @red;
         }
-        
+
         &.name.tag {
                 color: @red;
                 text-decoration: underline;
         }
-        
+
         &.other.attribute-name {
                 color: @orange;
-                
+
                 &.id {
                         color: @red;
                 }
@@ -267,19 +267,19 @@
         &.class {
                 color: @light-orange;
         }
-        
+
         &.link {
                 color: @orange;
         }
-        
+
         &.require {
                 color: @red;
         }
-        
+
         &.selector {
                 color: @purple;
         }
-        
+
         &.separator {
                 background-color: @gray;
                 color: @syntax-text-color;
@@ -295,36 +295,36 @@
                 color: @orange;
                 font-style: bold;
         }
-        
+
         &.changed {
                 color: @purple;
         }
-        
+
         &.deleted {
                 color: @red;
         }
-        
+
         &.italic {
                 color: @purple;
                 font-style: italic;
         }
-        
+
         &.heading .punctuation.definition.heading {
                 color: @blue;
         }
-        
+
         &.inserted {
                 color: @green;
         }
-        
+
         &.list {
                 color: @red;
         }
-        
+
         &.quote {
                 color: @orange;
         }
-        
+
         &.raw.inline {
                 color: @green;
         }
