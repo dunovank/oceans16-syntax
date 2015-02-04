@@ -2,7 +2,7 @@
   "name": "oceans16-atom",
   "theme": "syntax",
   "version": "14.0.8",
-  "description": "Oceans16 Dark/Light Flavours for Atom",
+  "description": "Oceans16 dark syntax theme for Atom (based on spacegray ocean dark)",
   "repository": {
     "type": "git",
     "url": "https://github.com/dunovank/oceans16-atom"
@@ -11,7 +11,7 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "readme": "# Oceans16 Atom Theme\n\nOceans16 Dark/Light Flavours for Atom\n\n![oceans16-dark](https://github.com/dunovank/oceans16-atom/raw/master/oceans16_dark_atom.png)",
+  "readme": "# Oceans16 Atom Theme\n\nOceans16 dark syntax theme based on spacegray ocean \n\n![oceans16-dark](https://github.com/dunovank/oceans16-atom/raw/master/oceans16_dark_atom.png)",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/dunovank/oceans16-atom/issues"
