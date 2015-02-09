@@ -1,10 +1,15 @@
 @import "syntax-variables";
 
-.editor {
+atom-text-editor {
         background-color: @syntax-background-color;
         color: @syntax-text-color;
+}
+        
+atom-text-editor,
+:host {
+
         .scroll-view {
-                padding-left:4px;
+                padding-left: 4px;
         }
 
         .wrap-guide {
@@ -60,12 +65,12 @@
         }
 }
 
-.editor .search-results .marker .region {
+.atom-text-editor .search-results .marker .region {
         background-color: transparent;
         border: 1px solid @syntax-result-marker-color;
 }
 
-.editor .search-results .marker.current-result .region {
+.atom-text-editor .search-results .marker.current-result .region {
         border: 1px solid @syntax-result-marker-color-selected;
 }
 
@@ -79,7 +84,7 @@
         opacity: .8;
 }
 
-.editor .gutter .line-number .icon-right {
+.atom-text-editor .gutter .line-number .icon-right {
         display: none;
 }
 
@@ -330,7 +335,7 @@
         }
 }
 
-.editor .cursor {
+.cursor {
         border-left-width: 2px;
         color: @bright-blue;
 }
@@ -341,9 +346,6 @@
                 color: @green;
         }
 }
-
-.editor.mini .scroll-view {
-        background-color: @syntax-background-color;//gray;
-        color: @light-blue;//@syntax-background-color;
-        padding-left: 2px;
+atom-text-editor.mini .scroll-view {
+  padding-left: 4px;
 }
