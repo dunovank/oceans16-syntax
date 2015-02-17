@@ -16,28 +16,23 @@ atom-text-editor,
                 background-color: rgba(255, 255, 255, 0.0);
         }
 
-        //disable code folding icons
-        .icon-right {
-                width: 0 !important;
-        }
-
         .indent-guide {
                 color: fade(@blue, 10%);
         }
 
         .invisible-character {
                 color: #626b83;
-                //color: fade(#515a6f, 25%);
         }
 
         .gutter {
-                background-color: fade(#333946, 50%);// #333946;
-                color:#515a6f;//#626b83;//#515a6f;
-                text-align: right;
+                background-color: fade(#333946, 50%);
+                color:#515a6f;
+                //width:30px;
+                //text-align: right;
 
                 .line-number {
-                        padding-right: 5px;
-                        width:25px;
+                        padding-right: 6px;
+                        width:30px;
                         &.cursor-line {
                                 background-color: fade(#4c5568, 55%);
                                 color: fade(@blue, 75%);
