@@ -237,11 +237,20 @@ atom-text-editor,
 
 .entity {
         &.name.function {
-                color:@blue;
+                color: #7aa6cf;
         }
 
         &.name.class, &.name.type.class {
                 color: @light-orange;
+        }
+
+        &.name.type {
+                color: @light-orange;
+                text-decoration: underline;
+        }
+
+        &.other.inherited-class {
+                color: @green;
         }
 
         &.name.section {
