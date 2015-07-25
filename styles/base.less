@@ -69,7 +69,7 @@ atom-text-editor,
 }
 
 .comment {
-        color: #515a6f;
+        color: lighten(#515a6f, 4%);
 }
 
 .bracket-matcher .region {
@@ -100,15 +100,15 @@ atom-text-editor,
         }
 
         &.operator {
-                color: @red;
-        }
-
-        &.operator.logical {
                 color: @blue;
         }
 
+        &.operator.logical {
+                color: @red;
+        }
+
         &.operator.assignment {
-                color: @light-gray-blue;
+                color: lighten(@blue, 5%); //@syntax-text-color;
         }
 
         &.other.special-method {
@@ -145,15 +145,14 @@ atom-text-editor,
 }
 
 .variable {
-        color: lighten(@blue, 2%);
+        color: @red;
 
         &.interpolation {
                 color: @red;
         }
 
         &.parameter.function {
-                color: lighten(desaturate(#77ABE7, 15%), 10%);
-                font-style: italic;
+                color:@syntax-text-color;
         }
 }
 
