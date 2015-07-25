@@ -85,7 +85,6 @@ atom-text-editor,
 .entity {
         &.name.type {
                 color: @yellow;
-                text-decoration: underline;
         }
 
         &.other.inherited-class {
@@ -101,7 +100,7 @@ atom-text-editor,
         }
 
         &.operator {
-                color: @blue;
+                color: @red;
         }
 
         &.operator.logical {
@@ -109,7 +108,7 @@ atom-text-editor,
         }
 
         &.operator.assignment {
-                color: @syntax-text-color;
+                color: @light-gray-blue;
         }
 
         &.other.special-method {
@@ -121,15 +120,11 @@ atom-text-editor,
         }
 }
 
-.storage {
-        color: @purple;
-}
-
 .constant {
         color: @red;
 
         &.character.escape {
-                color: @orange;
+                color: @yellow;
         }
 
         &.numeric {
@@ -150,14 +145,15 @@ atom-text-editor,
 }
 
 .variable {
-        color: lighten(@dull_blue, 5%);
+        color: lighten(@blue, 2%);
 
         &.interpolation {
-                color: darken(@red, 10%);
+                color: @red;
         }
 
         &.parameter.function {
-                color: @syntax-text-color;
+                color: lighten(desaturate(#77ABE7, 15%), 10%);
+                font-style: italic;
         }
 }
 
@@ -216,7 +212,7 @@ atom-text-editor,
         }
 
         &.section.embedded {
-                color: darken(@red, 10%);
+                color: @red;
         }
 
 }
@@ -235,6 +231,9 @@ atom-text-editor,
         }
 }
 
+.storage {
+        color: @purple;
+}
 .entity {
         &.name.function {
                 color: @blue;
@@ -246,7 +245,6 @@ atom-text-editor,
 
         &.name.type {
                 color: @red;
-                text-decoration: underline;
         }
 
         &.other.inherited-class {
@@ -259,7 +257,6 @@ atom-text-editor,
 
         &.name.tag {
                 color: @red;
-                text-decoration: underline;
         }
 
         &.other.attribute-name {
