@@ -1,7 +1,7 @@
 {
   "name": "oceans16-atom",
   "theme": "syntax",
-  "version": "21.0.8",
+  "version": "21.0.9",
   "description": "Oceans16 dark syntax theme for Atom (based on spacegray ocean dark)",
   "repository": {
     "type": "git",
