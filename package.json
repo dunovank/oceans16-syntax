@@ -11,7 +11,7 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "readme": "# Oceans16 Atom Theme\n\nOceans16 dark syntax theme based on spacegray ocean \n\n![oceans16-dark](https://github.com/dunovank/oceans16-atom/raw/master/oceans16_dark_atom.png)",
+  "readme": "# Oceans16 Atom Theme\n\nOceans16 dark syntax theme based on spacegray ocean \n\n![oceans16-dark](https://github.com/dunovank/one-dork-ui/raw/master/screens/editor.png)",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/dunovank/oceans16-atom/issues"
