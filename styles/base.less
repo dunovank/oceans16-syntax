@@ -11,7 +11,6 @@ atom-text-editor,
         .scroll-view {
                 padding-left: 4px;
         }
-
         .wrap-guide {
                 background-color: fade(@blue, 15%);
                 color: fade(@blue, 15%);
@@ -22,25 +21,25 @@ atom-text-editor,
         }
 
         .invisible-character {
-                color: #626b83;
+                color: fade(@blue, 30%);
         }
 
         .gutter {
-                background-color: fade(#333946, 50%);
-                color:#515a6f;
+                background-color: @syntax-background-color;
+                color: #515a6f;
                 width:45px;
                 text-align: right;
                 .line-number {
                         padding-right:8px;
                         width:50px;
                         &.cursor-line {
-                                background-color: fade(#4c5568, 55%);
-                                color: fade(@blue, 75%);
+                                background-color: fade(#515a6f, 45%);
+                                color: fade(@green, 65%);
                         }
 
                         &.cursor-line-no-selection {
-                                background-color: fade(#4c5568, 55%);
-                                color: fade(@blue, 75%);
+                                background-color: fade(#515a6f, 55%);
+                                color: fade(@blue, 60%);
                         }
                 }
         }
