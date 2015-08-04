@@ -26,7 +26,7 @@ atom-text-editor,
 
         .gutter {
                 background-color: @syntax-background-color;
-                color: #515a6f;
+                color: @comment-blue;
                 width:45px;
                 text-align: right;
                 .line-number {
@@ -39,7 +39,7 @@ atom-text-editor,
 
                         &.cursor-line-no-selection {
                                 background-color: fade(#515a6f, 50%);
-                                color: fade(@blue, 50%);
+                                color: fade(@blue, 55%);
                         }
                 }
         }
@@ -69,7 +69,7 @@ atom-text-editor,
 }
 
 .comment {
-        color: @gray;
+        color: lighten(@comment-blue,3%);
 }
 
 .bracket-matcher .region {
@@ -145,7 +145,7 @@ atom-text-editor,
 }
 
 .variable {
-        color: @red;
+        color: @cyan;
 
         &.interpolation {
                 color: @red;
@@ -181,7 +181,7 @@ atom-text-editor,
 .punctuation {
         &.definition {
                 &.comment {
-                        color: @gray;
+                        color: @comment-blue;
                 }
 
                 &.string {
