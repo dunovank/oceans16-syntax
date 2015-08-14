@@ -5,19 +5,19 @@
   "description": "Oceans16 dark syntax theme for Atom (based on spacegray ocean dark)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dunovank/oceans16-atom"
+    "url": "https://github.com/dunovank/oceans16-syntax"
   },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "readme": "# Oceans16 Atom Theme\n\nOceans16 dark syntax theme based on spacegray ocean \n\n![oceans16-dark](https://github.com/dunovank/oceans16-atom/raw/master/screens/editor.png)",
+  "readme": "# Oceans16 Atom Theme\n\nOceans16 dark syntax theme based on spacegray ocean \n\n![oceans16-dark](https://github.com/dunovank/oceans16-syntax/raw/master/screens/editor.png)",
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/dunovank/oceans16-atom/issues"
+    "url": "https://github.com/dunovank/oceans16-syntax/issues"
   },
-  "homepage": "https://github.com/dunovank/oceans16-atom",
-  "_id": "oceans16-atom@14.0.2",
+  "homepage": "https://github.com/dunovank/oceans16-syntax",
+  "_id": "oceans16-syntax@14.0.2",
   "_shasum": "ba9bf25479b237fd50a6b47fac1ee243e65cc7cf",
   "_resolved": "file:../d-115030-2381-a9zlge/package.tgz",
   "_from": "../d-115030-2381-a9zlge/package.tgz",
