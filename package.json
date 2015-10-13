@@ -11,16 +11,16 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "readme": "# Oceans16 Atom Theme\n\nOceans16 dark syntax theme based on spacegray ocean \n\n![oceans16-dark](https://github.com/dunovank/oceans16-syntax/raw/master/screens/editor.png)",
+  "readme": "# Oceans16 Atom Theme\n\nA more saturated take on the spacegray ocean scheme. However, for the ultimate saturation experience you'll probably want to go with [oceans16-bright](https://github.com/dunovank/oceans16-bright-syntax). And when you need a break from the dark themes, try a little [3rd grade nostalgia](https://github.com/dunovank/grade3-syntax)\nIf you're feeling it, go dress up your IPython (Jupyter) Notebooks [here](https://github.com/dunovank/jupyter-themes). \n![oceans16-dark](https://github.com/dunovank/oceans16-syntax/blob/master/screens/oceans16.png?raw=true)",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/dunovank/oceans16-syntax/issues"
   },
   "homepage": "https://github.com/dunovank/oceans16-syntax",
-  "_id": "oceans16-syntax@14.0.2",
+  "_id": "oceans16-syntax@21.0.25",
   "_shasum": "ba9bf25479b237fd50a6b47fac1ee243e65cc7cf",
-  "_resolved": "file:../d-115030-2381-a9zlge/package.tgz",
-  "_from": "../d-115030-2381-a9zlge/package.tgz",
+  "_resolved": "file:../d-115913-12469-98isrj/package.tgz",
+  "_from": "../d-115913-12469-98isrj/package.tgz",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [],
