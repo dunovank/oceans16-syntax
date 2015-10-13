@@ -11,7 +11,7 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "readme": "# Oceans16 Atom Theme\n\nA more saturated take on the spacegray ocean scheme. However, for the ultimate saturation experience you'll probably want to go with [oceans16-bright](https://github.com/dunovank/oceans16-bright-syntax). And when you need a break from the dark themes, try a little [3rd grade nostalgia](https://github.com/dunovank/grade3-syntax)\nIf you're feeling it, go dress up your IPython (Jupyter) Notebooks [here](https://github.com/dunovank/jupyter-themes). \n![oceans16-dark](https://github.com/dunovank/oceans16-syntax/blob/master/screens/oceans16.png?raw=true)",
+  "readme": "# Oceans16 Atom Theme\n\nA more saturated take on the spacegray ocean scheme. However, for the ultimate saturation experience you'll probably want to go with [oceans16-bright](https://github.com/dunovank/oceans16-bright-syntax). And when you need a break from the dark themes, try a little [3rd grade nostalgia](https://github.com/dunovank/grade3-syntax). \n\nIf you're feeling it, go dress up your IPython (Jupyter) Notebooks [here](https://github.com/dunovank/jupyter-themes). \n![oceans16-dark](https://github.com/dunovank/oceans16-syntax/blob/master/screens/oceans16.png?raw=true)",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/dunovank/oceans16-syntax/issues"
